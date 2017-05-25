@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#tweets {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#tweets li {
+	padding: 5px 10px;
+}
+
+#tweets li:nth-child(odd) {
+	background: #eee;
+}
+
+.leftStats {
+	float: left;
+	margin-left: 10px;
+}
+
+.rightStats, .midStats {
+	float: right;
+	margin-right: 100px;
+}
+
+.topStats {
+	overflow: hidden;
+	margin: 10px 0px;
+}
+
+#chart, #chart2 {
+	margin-left: 20px;
+}
+
+/****************************************/
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+  /*show number on hover*/
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  /*display: none;*/
+}

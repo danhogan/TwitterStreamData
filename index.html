@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Twitter Stream Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="topStats">
+    	<div class="leftStats">
+    		<div class="startTime">
+				<label for="startTime">Tweets starting on: </label>
+				<span id="startTime">-</span>
+			</div>
+			<div class="total">
+				<label for="total">Tweets since start: </label>
+				<span id="total">0</span>
+			</div>
+			<div class="thisMinute">
+				<label for="thisMinute">For this minute: </label>
+				<span id="thisMinute">0</span>
+			</div>
+    	</div>
+    	<div class="midStats">
+			<div class="perMinute">
+				<label for="perMinute">Average Tweets Per Minute: </label>
+				<span id="perMinute">0.00</span>
+			</div>
+			<div class="minMinute">
+				<label for="minMinute">Minimum Tweets Per Minute: </label>
+				<span id="minMinute">0</span>
+			</div>
+			<div class="maxMinute">
+				<label for="maxMinute">Maximum Tweets Per Minute: </label>
+				<span id="maxMinute">0</span>
+			</div>
+		</div>
+
+		<div class="rightStats">
+			<div class="perHour">
+				<label for="perHour">Average Tweets Per Hour: </label>
+				<span id="perHour">0.00</span>
+			</div>
+			<div class="minHour">
+				<label for="minHour">Minimum Tweets Per Hour: </label>
+				<span id="minHour">0</span>
+			</div>
+			<div class="maxHour">
+				<label for="maxHour">Maximum Tweets Per Hour: </label>
+				<span id="maxHour">0</span>
+			</div>
+    	</div>	
+	</div>
+	
+	<div id="chart"></div>
+	<div id="chart2"></div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="client.js"></script>
+    <script src="drawChart.js"></script>
+    <script src="dates.js"></script>
+</body>
+</html>
